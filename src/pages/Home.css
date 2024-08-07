@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.text-content {
+    padding: 40px;
+    flex: 1;
+}
+.text-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.text-content ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.text-content ul li::before {
+    content: '✔';
+    color: green;
+    margin-right: 10px;
+}
+.explore-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00A86B;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.image-content {
+    flex: 1;
+}
+.image-content img {
+    width: 100%;
+    height: auto;
+}
