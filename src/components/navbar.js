@@ -2,12 +2,20 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import logoimage from "./logoimage-removebg-preview.png"
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary h-20 rounded-md">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <img
+            src={logoimage}
+            alt="logo here"
+            // style={{ height: '100%', width: 'auto' }}
+            // className="d-inline-block align-top"
+            width={80}
+            height={80}
+          />
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

@@ -4,12 +4,19 @@ import Navbar from './components/navbar';
 import { Route, Routes,useNavigate } from "react-router-dom";
 import CarouselFadeExample from './components/Slidingbar.js'
 import Home from "./pages/Home"
+import Videochat from"./pages/videochat"
+import Login from "./pages/loginpage.js"
 function App() {
   return (
     <div className="App">
     <Navbar/>
     {/* <CarouselFadeExample/> */}
-    <Home/>
+    
+    <Videochat/>
+    <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path='/login' element={<Login/>} />
+    </Routes>
    
 
     
